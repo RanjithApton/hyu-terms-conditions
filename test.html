@@ -1,0 +1,126 @@
+<html>
+  <head>
+  <title>Term & Conditions</title>
+    <style>
+      @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-image: linear-gradient(45deg, #231d5d, #9c27b0);
+  height: 100vh;
+  margin: 20px 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin: 40px;
+}
+
+.accordion {
+  margin-bottom: 10px;
+}
+.accordion .accordion-btn {
+  position: relative;
+  background-color: #ffec00;
+  background-image: linear-gradient(122deg, #ffec00, #ffff00);
+  border: none;
+  padding: 15px 20px;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  list-style-image: none;
+}
+.accordion .accordion-btn::-webkit-details-marker {
+  background: none;
+  color: transparent;
+}
+.accordion .accordion-btn::after {
+  content: "›";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  font-size: 35px;
+  font-family: monospace;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 50%;
+  color: #000000;
+  border: 2px solid #000000;
+  transform: translate(0%, -50%) rotate(0deg);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-bottom: 4px;
+  padding-left: 2px;
+  justify-content: center;
+  font-weight: normal;
+  transition: all 0.3s ease;
+}
+.accordion .accordion-content {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.accordion .accordion-content > * {
+  padding: 10px 20px;
+}
+.accordion[open] .accordion-btn::after {
+  transform: translate(0%, -50%) rotate(90deg);
+}
+.accordion[open] summary ~ * {
+  overflow: hidden;
+  animation: heightUp 1s ease-in-out;
+}
+
+@keyframes heightUp {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 2000px;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>A simple Accordion</h1>
+
+<details class="accordion">
+  <div class="accordion-content">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt, iste ut incidunt officia maxime impedit sit eligendi labore inventore, reprehenderit excepturi voluptas sequi eos dolorem voluptatibus porro voluptate dolorum.
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <div class="accordion-content">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt, iste ut incidunt officia maxime impedit sit eligendi labore inventore, reprehenderit excepturi voluptas sequi eos dolorem voluptatibus porro voluptate dolorum.
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <div class="accordion-content">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt, iste ut incidunt officia maxime impedit sit eligendi labore inventore, reprehenderit excepturi voluptas sequi eos dolorem voluptatibus porro voluptate dolorum.
+    </p>
+  </div>
+</details>
+
+<details class="accordion">
+  <div class="accordion-content">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt, iste ut incidunt officia maxime impedit sit eligendi labore inventore, reprehenderit excepturi voluptas sequi eos dolorem voluptatibus porro voluptate dolorum.
+    </p>
+  </div>
+</details>
+  </body>
+</html>
